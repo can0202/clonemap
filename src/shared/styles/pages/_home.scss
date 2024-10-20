@@ -1,24 +1,114 @@
-.notiVars {
-  h3 {
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 600;
-    color: $color-black;
-  }
+.lists {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
 
-  p {
-    font-size: 14px;
-    font-weight: 400;
-    color: #6C6868;
-  }
-}
+  .item {
+    position: relative;
+    cursor: pointer;
+    .img-thumbnail {
+      height: 235px;
+      width: 100%;
+      border-radius: 12px;
+      position: relative;
+      transition: 0.3s ease;
+      &::before {
+        background: transparent;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        transition: 0.3s ease;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+        display: block;
+      }
+    }
+    .text {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      padding: 16px;
+      z-index: 1;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s ease;
+      .title-item {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+        color: #fff;
+      }
+      .options {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        list-style: none;
 
+        li {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          color: #fff;
+          span {
+            color: #fff;
+          }
+          .unit {
+            color: #afafaf;
+          }
+        }
+      }
+      .percent {
+        font-size: 13px;
+        line-height: 16px;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        color: #afafaf;
+        label {
+          font-size: 16px;
+          line-height: 20px;
+          font-weight: 700;
+          color: #fff;
+        }
+      }
+      .address {
+        span {
+          font-size: 14px;
+          line-height: 17px;
+          font-weight: 400;
+          color: #fff;
+        }
+        .price {
+          font-size: 23px;
+          line-height: 28px;
+          font-weight: 700;
+        }
+      }
+    }
 
-.tab-content-skeleton {
-  grid-template-columns: repeat(5, 1fr);
-  gap: 12px;
-
-  @media (max-width: 767px) {
-    grid-template-columns: repeat(2, 1fr);
+    &:hover {
+      .img-thumbnail {
+        &::before {
+          background: linear-gradient(
+            360deg,
+            #000000 0%,
+            rgba(0, 0, 0, 0) 81.1%
+          );
+        }
+      }
+      .text {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
   }
 }
