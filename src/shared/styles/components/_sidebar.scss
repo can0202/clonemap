@@ -1,0 +1,39 @@
+.sidebar-search {
+  .box-sidebar {
+    border-radius: 12px;
+    border: 1px solid #ECECEC;
+    background: #FFF;
+    padding: 16px;
+
+
+    label {
+      width: 100%;
+      color: #181414;
+
+      &:hover {
+        .ant-radio-inner {
+          border-color: #d1132a;
+        }
+      }
+
+      .ant-radio-checked .ant-radio-inner {
+        border-color: #d1132a;
+        background-color: #d1132a;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .province {
+    padding: 16px 0 16px 16px;
+
+    .ant-radio-group {
+      max-height: 519px;
+      overflow: auto;
+      overflow-x: hidden;
+    }
+  }
+}

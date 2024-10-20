@@ -1,0 +1,64 @@
+@import 'utilities/variables';
+@import 'utilities/functions';
+@import 'utilities/mixins';
+
+@import 'base/reset';
+// @import 'base/typography';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'components/buttons';
+@import 'components/search';
+@import 'components/titleSearch';
+@import 'components/cartItem';
+@import 'components/pagination';
+@import 'components/cartTopProject';
+@import 'components/banner';
+@import 'components/filterModal';
+@import 'components/modalLogin';
+@import 'components/home/formSearch';
+@import 'components/home/aboutVars';
+@import 'components/home/projectDiscovery';
+@import 'components/home/discovery';
+@import 'components/home/recommendEstate';
+@import 'components/home/marketReport';
+@import 'components/home/bannerAdsGrid';
+@import 'components/home/news';
+@import 'components/home/exchangesRealEstate';
+@import 'components/home/utilities';
+@import 'components/home/infoDescription';
+@import 'components/sidebar';
+@import 'components/appModal';
+@import 'components/appCheckbox';
+@import 'components/appSelect';
+@import 'components/appInput';
+@import 'components/filterModalV2';
+@import 'components/appNotification';
+@import 'components/appDrawer';
+@import 'components/antTabs';
+@import 'components/appNotFound';
+
+@import 'pages/home';
+@import 'pages/rating';
+@import 'pages/sitemap';
+
+@import 'themes/theme';
+
+@import 'components/detailtrade/relatedproject';
+@import 'components/detailtrade/relatedrealestate';
+@import 'components/detailtrade/detailtrade';
+@import 'components/detailtrade/postauthorcard';
+@import 'components/detailtrade/imagelist';
+@import 'components/detailtrade/header';
+@import 'components/detailtrade/modal';
+@import 'components/detailtrade/backHistory';
+@import 'components/detailtrade/topInformation';
+@import 'components/detailtrade/overviewDescription';
+@import 'components/detailtrade/realEstateLocation';
+@import 'components/detailtrade/loan';
+@import 'components/detailtrade/related';
+@import 'components/detailtrade/reportMarket';
+@import 'components/detailtrade/characteristic';
+@import 'components/detailtrade/topInfoProject';
+@import 'components/table';

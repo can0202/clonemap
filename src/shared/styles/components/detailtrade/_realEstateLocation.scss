@@ -1,0 +1,100 @@
+.map-estate {
+  .map {
+    height: 370px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+
+    @media (max-width: 767px) {
+      height: 180px;
+    }
+  }
+
+  .map-skelete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.06) 25%, rgba(0, 0, 0, 0.15) 37%, rgba(0, 0, 0, 0.06) 63%);
+  }
+
+  .ant-tabs {
+    &-nav {
+      &::before {
+        display: none;
+      }
+
+      &-wrap {
+
+        &::after,
+        &::before {
+          display: none;
+        }
+      }
+
+      .ant-tabs-tab {
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        background-color: transparent;
+
+        &:not(:first-child) {
+          margin-left: 16px !important;
+        }
+
+        &-btn {
+          list-style: none;
+          padding: 8px 12px;
+          min-width: 120px;
+          border-radius: 8px;
+          background: #FFF;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: #6C6868;
+          transition: 0.3s ease;
+          border: .5px solid #BDBDBD;
+          cursor: pointer;
+          text-align: center;
+        }
+
+        &-active {
+          .ant-tabs-tab-btn {
+            border-color: #FBF0F2;
+            color: $color-main;
+            background: #FBF0F2;
+
+            span {
+              color: $color-main;
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+
+  .load-post-nearlist {
+    height: 215px;
+    overflow: hidden;
+
+    &.hide {
+      height: auto;
+    }
+
+    ul {
+      list-style: none;
+      height: 100%;
+      overflow: auto;
+      padding-right: 16px;
+
+      li {
+        &:not(:last-child) {
+          border-bottom: 1px dashed$color-border;
+          padding-bottom: 12px;
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+}

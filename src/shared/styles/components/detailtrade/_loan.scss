@@ -1,0 +1,211 @@
+.loan {
+  .left-box {
+    .input-control {
+      margin-bottom: 14px;
+
+      .ant-input-number-input-wrap {
+        input {
+          text-align: right;
+        }
+      }
+
+      h4,
+      label span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #181414;
+      }
+    }
+
+    .ant-radio-wrapper {
+      &:hover {
+        .ant-radio-inner {
+          border-color: #d9d9d9;
+        }
+      }
+    }
+
+    .ant-radio {
+      &-inner {
+        width: 20px;
+        height: 20px;
+        border-width: 3px;
+      }
+
+      &-checked {
+        .ant-radio-inner {
+          border-color: $color-main !important;
+          background-color: $color-main;
+        }
+      }
+    }
+
+    .ant-input-number {
+      width: 100%;
+    }
+
+    .ant-slider {
+      margin: 8px 5px;
+
+      &.slide-loan {
+        margin: 8px 0 !important;
+      }
+
+      &-rail {
+        top: 7px;
+        background-color: $color-border;
+      }
+
+      &-track {
+        background-color: $color-main;
+        top: 7px;
+      }
+
+      &-step {
+        top: 7px;
+      }
+
+      &-handle {
+        width: 15px;
+        height: 15px;
+
+        &::before {
+          width: 15px;
+          height: 15px;
+        }
+
+        &::after {
+          width: 15px;
+          height: 15px;
+          box-shadow: 0 0 0 2px $color-main;
+          inset-block-start: 0 !important;
+          inset-inline-start: 0 !important;
+        }
+      }
+    }
+
+    .calc-loan-download {
+      gap: 10px;
+
+      button {
+        width: 50%;
+        margin-bottom: 0;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .value-house-left {
+        flex: 0 0 50.5%;
+        max-width: 50.5%;
+      }
+
+      .value-house-right {
+        flex: 0 0 49.5%;
+        max-width: 49.5%;
+      }
+    }
+  }
+
+  .right-box {
+    canvas {
+      width: 200px !important;
+      height: 200px !important;
+      display: flex;
+      margin: 0 auto;
+    }
+
+    .labels-chart {
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 10px;
+      }
+
+      &-bottom {
+        border-top: 1px solid $color-border;
+        padding-top: 10px;
+      }
+
+      &-total {
+        padding-bottom: 10px;
+
+        span {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+
+      &-alert {
+        p {
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 18px;
+          color: #6C6868;
+          font-style: italic;
+        }
+      }
+
+      &-left {
+        .cir-color {
+          margin-right: 12px;
+          width: 20px;
+          height: 20px;
+          border-radius: 100%;
+          flex: none;
+
+          &-1 {
+            background-color: #DEBD8B;
+          }
+
+          &-2 {
+            background-color: #A7CDF1;
+          }
+
+          &-3 {
+            background-color: #E79DD6;
+          }
+        }
+
+        .re__desc {
+          font-weight: 600;
+          text-align: left;
+          width: 100%;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+#tab-loan {
+  @media (max-width: 767px) {
+    margin-bottom: 24px;
+  }
+}
+
+.table-loan {
+  .ant-table-thead {
+    tr {
+      th {
+        text-align: center;
+      }
+    }
+  }
+
+  .ant-table-tbody {
+    tr {
+      td {
+        &:first-child {
+          text-align: center;
+        }
+      }
+    }
+
+    td {
+      text-align: right;
+    }
+  }
+}

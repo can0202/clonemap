@@ -1,0 +1,73 @@
+.ant-drawer-body {
+  padding: 0 !important;
+  overflow: hidden !important;
+
+  .ant-tabs-nav-wrap {
+    justify-content: center;
+  }
+
+  .ant-tabs-tab {
+    .ant-tabs-tab-btn {
+      text-align: center;
+      min-width: 100px;
+    }
+  }
+}
+
+// notication
+.ant-notification-notice {
+  padding: 16px;
+  border-radius: 12px;
+
+  .ant-notification-notice-message,
+  .ant-notification-notice-description {
+    margin-inline-start: 30px !important
+  }
+
+  .ant-notification-notice-close {
+    inset-inline-end: 16px !important;
+    height: 15px;
+  }
+
+  &.bg-success {
+    background-color: #E1F6EA;
+
+    .ant-notification-notice-with-icon,
+    .ant-notification-notice-message,
+    .ant-notification-notice-description {
+      color: #119335;
+
+      path {
+        color: #119335;
+      }
+    }
+  }
+
+  &.bg-error {
+    background-color: #FFECEC;
+
+    .ant-notification-notice-with-icon,
+    .ant-notification-notice-message,
+    .ant-notification-notice-description {
+      color: #F91111;
+
+      path {
+        color: #F91111;
+      }
+    }
+  }
+
+  &.bg-info {
+    background-color: #EEF5FF;
+
+    .ant-notification-notice-with-icon,
+    .ant-notification-notice-message,
+    .ant-notification-notice-description {
+      color: #1158BA;
+
+      path {
+        color: #1158BA;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+
+  @media (max-width: 767px) {
+    overflow: hidden;
+  }
+}
+
+html {
+  overflow: inherit;
+
+  @media (max-width: 767px) {
+    overflow: auto;
+  }
+}
+
+
+.no-scroll {
+  overflow: hidden !important;
+}
+
+body {
+  font-size: 14px !important;
+  line-height: 20px !important;
+  background-color: $color-white !important;
+  color: #181414 !important;
+}
+
+:where(*) {
+  font-family: 'Inter', sans-serif !important;
+}
+
+a {
+  text-decoration: none;
+}

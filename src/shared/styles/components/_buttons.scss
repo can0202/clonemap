@@ -1,0 +1,203 @@
+.ant-btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+
+  &-text {
+    padding: 0 !important;
+    height: auto;
+    min-width: auto !important;
+
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+
+  &-default {
+    background-color: #FBF0F2;
+    border: 1px solid transparent;
+    color: #D1132A;
+    font-weight: 500;
+    min-width: 120px;
+
+    span {
+      color: #D1132A;
+    }
+
+    &:hover {
+      background-color: #FFEAEC !important;
+      border-color: #FFEAEC !important;
+      color: #D1132A !important;
+    }
+  }
+
+  &-primary {
+    background-color: #D1132A;
+
+    span {
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: #E12B41 !important;
+    }
+  }
+
+  &-disabled {
+    background-color: #F5F5F5;
+    color: #9B9A9A;
+
+    &:hover {
+      background-color: #F5F5F5 !important;
+      color: #9B9A9A !important;
+      border-color: #F5F5F5 !important;
+
+      span {
+        color: #9B9A9A !important;
+      }
+    }
+
+    span {
+      color: #9B9A9A;
+    }
+  }
+}
+
+.btn {
+  padding: 12px 20px;
+  min-width: 120px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+
+  svg {
+    margin-right: 8px;
+  }
+
+  &-phone {
+    border-color: $color-main !important;
+    margin-bottom: 10px;
+    height: 44px;
+
+    @media (max-width: 767px) {
+      height: 40px;
+    }
+
+    &.disable {
+      opacity: .6;
+      pointer-events: none;
+    }
+
+    &:hover {
+      color: $color-main !important;
+      background-color: $color-white;
+
+      path {
+        fill: $color-main;
+        stroke: $color-main;
+      }
+    }
+  }
+
+  &-email {
+    border: 1px solid $color-main;
+    color: $color-main;
+    cursor: pointer;
+
+    &.disable {
+      opacity: .6;
+      pointer-events: none;
+    }
+  }
+
+  &-project-bds {
+    &:hover {
+      background-color: $color-main;
+      color: $color-white;
+    }
+  }
+
+  &-text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-main;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    background-color: transparent;
+
+    &:hover {
+      color: $color-main !important;
+    }
+
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  &-readmore {
+    padding: 10px 24px;
+    border: 0.5px solid #BDBDBD;
+    border-radius: 12px;
+    transition: .3s ease;
+    cursor: pointer;
+    color: #6C6868;
+
+    &:hover {
+      background-color: $color-main;
+      color: $color-white;
+      border-color: $color-main !important;
+    }
+  }
+}
+
+.main-co {
+  color: $color-main;
+  font-size: 14px;
+  font-weight: 700;
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
+}
+
+.highlight-label {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+
+  &-project {
+    left: 18px;
+  }
+
+  &-real {
+    left: -4px;
+
+    img {
+      width: 65px;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .btn {
+    color: $color-white;
+    padding: 8px 16px;
+    line-height: normal;
+
+    @media (max-width: 767px) {
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+  }
+}
+
+.facebook-map {
+  display: none;
+}

@@ -1,0 +1,285 @@
+.rating {
+  &-author {
+    background: $color-white;
+    padding: 16px 0;
+    border-bottom: .5px solid $color-border;
+
+    &-inner {
+      @media (max-width: 767px) {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start !important;
+      }
+    }
+
+    &-user {
+      gap: 16px;
+
+      @media (max-width: 767px) {
+        gap: 10px;
+      }
+
+      .author-avatar {
+        height: 60px;
+        width: 60px;
+
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &-info {
+      gap: 16px;
+
+      @media (max-width: 767px) {
+        gap: 10px;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .f-600 {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 500;
+
+        @media (max-width: 767px) {
+          font-size: 18px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+
+  &-number {
+    span {
+      font-size: 14px;
+
+      @media (max-width: 767px) {
+        font-size: 11px;
+      }
+    }
+  }
+
+  &-role {
+    span {
+      font-size: 14px;
+
+      @media (max-width: 767px) {
+        font-size: 11px;
+      }
+    }
+
+    svg {
+      margin-left: 8px;
+    }
+  }
+
+  &-button {
+    .btn {
+      height: auto;
+      border-radius: 8px;
+      background-color: $color-main;
+      color: $color-white;
+      border: none;
+
+      @media (max-width: 767px) {
+        padding: 10px 12px;
+        font-size: 12px;
+      }
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
+
+  .author-info {
+    p {
+      gap: 8px;
+
+      &.postBy {
+        margin-bottom: 0;
+      }
+    }
+
+    .name {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+    }
+  }
+
+  .icon-tick {
+    display: inline-flex;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .anticon-star {
+    svg {
+      font-size: 16px;
+    }
+  }
+
+  .ant-rate {
+    font-size: inherit;
+  }
+
+  &-list {
+    &-total {
+      margin: 16px 0;
+
+      h3 {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    .item {
+      &-info {
+        margin-bottom: 16px;
+
+        &-left {
+          gap: 8px;
+
+          @media (max-width: 767px) {
+            flex: none;
+            width: 70%;
+          }
+
+          .img {
+            height: 44px;
+            width: 44px;
+            flex: none;
+
+            img {
+              height: 100%;
+              width: 100%;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+
+          .info {
+            h4 {
+              font-size: 16px;
+              line-height: 24px;
+              font-weight: 500;
+            }
+          }
+        }
+
+        &-right {
+          @media (max-width: 767px) {
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      &-content {
+        h3 {
+          font-size: 15px;
+          line-height: 20px;
+          font-weight: 500;
+          margin-bottom: 8px;
+        }
+
+        p {
+          font-size: 13px;
+        }
+      }
+
+      .author-info {
+        p {
+          margin-bottom: 0;
+        }
+
+        .name {
+          font-size: 16px;
+          line-height: 24px;
+
+          @media (max-width: 767px) {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &-owner {
+    background: #F5F5F5;
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+
+    h2 {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+  }
+
+  &-user {
+    .item {
+      padding: 16px 0;
+
+      &:not(:last-child) {
+        border-bottom: 0.5px solid $color-border;
+      }
+
+      &:first-child {
+        border-top: 0.5px solid $color-border;
+      }
+    }
+  }
+}
+
+.modal-ratings {
+  .ant-modal-content {
+    @media (max-width: 767px) {
+      padding: 16px;
+    }
+  }
+}
+
+.modal-rating {
+  &-title {
+    h4 {
+      margin-bottom: 8px;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+
+      @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 8px;
+      }
+    }
+
+    h5 {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+  }
+
+  .input-modal-rating {
+    .ant-input-affix-wrapper {
+      height: 44px !important;
+    }
+  }
+
+}

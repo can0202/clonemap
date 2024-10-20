@@ -1,0 +1,131 @@
+.market-report {
+  position: relative;
+
+  &::before {
+    content: '';
+    background-image: url('../../../../assets/img/bg-report.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 90%;
+  }
+
+  .swiper {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      opacity: 0;
+      transition: opacity .3s ease;
+    }
+
+    &:hover {
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        opacity: 1;
+      }
+    }
+  }
+
+  .swiper-slide {
+    border-radius: 12px;
+    background: transparent;
+    overflow: hidden;
+  }
+
+  .swiper-wrapper {
+    align-items: flex-end;
+  }
+
+  .item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid #ECECEC;
+
+    &:hover {
+      .image {
+        img {
+          transform: scale(1.1);
+        }
+      }
+
+    }
+
+    a {
+      position: relative;
+      z-index: 111;
+      display: block;
+      height: 100%;
+      cursor: pointer;
+    }
+
+    .image {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      transition: all .3s ease;
+
+      &::before {
+        content: "";
+        background: linear-gradient(180deg, rgba(45, 45, 45, 0) 40%, #1A1818 100%);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 12px;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        object-fit: cover;
+        display: block;
+        transition: .3s ease;
+
+      }
+    }
+
+    .text {
+      position: absolute;
+      // transition: all .3s ease-in-out;
+      z-index: 11;
+      cursor: pointer;
+      bottom: 0;
+      width: calc(100% - 16px);
+      padding: 8px;
+      left: 0;
+      text-align: left;
+
+      .type {
+        border-radius: 30px;
+        background: #F5F5F5;
+        color: #6C6868;
+        padding: 2px 6px;
+        font-size: 10px;
+        line-height: 12px;
+        min-width: 44px;
+        transition: 0.3s ease;
+        margin-bottom: 8px;
+        display: inline-block;
+      }
+
+      h3 {
+        color: #fff;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        text-align: left;
+      }
+    }
+  }
+
+
+}

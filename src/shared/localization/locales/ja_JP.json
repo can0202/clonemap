@@ -1,0 +1,19 @@
+{
+  "common.loginRegister": "ログイン",
+  "common.logout": "ログアウト",
+  "common.login": "ログイン",
+  "common.register": "登録する",
+  "common.changePassword": "パスワードを変更する",
+  "common.representative": "代表ページ",
+  "common.accountInfo": "口座情報",
+
+  "common.notiLogout": "ログアウトしますか?",
+  "common.yes": "持っている",
+  "common.no": "そうではない",
+  "common.save": "保存",
+  "common.cancel": "キャンセル",
+  "common.notification": "通知",
+
+  "common.postNews": "ニュースを投稿する",
+  "locale.ja": "Japan"
+}

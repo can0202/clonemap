@@ -1,0 +1,26 @@
+.ant-select {
+  width: 100% !important;
+  height: 100%;
+
+  .ant-select-selector {
+    height: 44px !important;
+    background: $color-white;
+    border: 0.5px solid #bdbdbd !important;
+    border-radius: 8px !important;
+    color: $color-black;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    .ant-select-selection-search-input {
+      height: 100% !important;
+    }
+  }
+
+  .ant-select-selection-placeholder {
+    color: #6C6868 !important;
+  }
+}

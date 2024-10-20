@@ -1,0 +1,20 @@
+.ant-input-affix-wrapper {
+  border: 0.5px solid $color-border !important;
+  height: 44px;
+  border-radius: 8px !important;
+
+  &:hover,
+  &:focus {
+    border: 0.5px solid $color-border !important;
+  }
+}
+
+.box-search {
+  .ant-input-group-addon {
+    display: none;
+  }
+}
+
+.ant-input-disabled {
+  color: $color-black !important;
+}

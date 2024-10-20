@@ -1,0 +1,134 @@
+.modal-login {
+  .ant-modal-content {
+    height: fit-content;
+  }
+
+  .ant-modal-header {
+    border: none;
+    background-color: $color-white;
+  }
+
+  &-head {
+    p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      margin-top: 16px;
+      color: #6C6868;
+      margin-bottom: 16px;
+    }
+  }
+
+  &-footer {
+    gap: 10px;
+  }
+}
+
+.modal-logout {
+  .btns {
+    justify-content: center;
+  }
+}
+
+.modal-users {
+  .ant-modal-title {
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  .btn {
+    margin-bottom: 0;
+
+    &-cancel {
+      &:hover {
+        background-color: $color-main;
+        color: $color-white;
+        border-color: $color-main;
+      }
+    }
+
+    &-accept {
+      background-color: $color-main;
+      color: $color-white;
+
+      &.disable {
+        pointer-events: none;
+        opacity: .5;
+      }
+
+      &:hover {
+        background-color: $color-white;
+        border-color: $color-main;
+        color: $color-main;
+      }
+    }
+  }
+}
+
+.modal-report {
+
+  .modal-login-head {
+    p {
+      margin-top: 0;
+      font-size: 14px;
+      line-height: 20px;
+      color: $color-black;
+    }
+
+    .ant-radio-group {
+      width: 100%;
+    }
+
+    .ant-space {
+      gap: 16px !important;
+      width: 100%;
+
+      span {
+        color: $color-black;
+      }
+    }
+  }
+
+  .ant-input-affix-wrapper {
+    height: auto !important;
+  }
+
+  label {
+    .ant-radio-checked {
+      .ant-radio-inner {
+        border-color: $color-main;
+        background-color: $color-main;
+      }
+    }
+
+    .ant-radio-inner {
+      width: 18px;
+      height: 18px;
+    }
+
+    &:hover {
+      .ant-radio-inner {
+        border-color: #d9d9d9;
+      }
+    }
+  }
+
+  .ant-input:hover {
+    border-color: #d9d9d9;
+  }
+}
+
+.ant-dropdown-placement-bottomLeft {
+  width: 168px;
+}

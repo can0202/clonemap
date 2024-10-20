@@ -1,0 +1,65 @@
+.site-map {
+  padding: 40px 0;
+}
+
+
+.section-grid {
+  display: grid;
+  gap: 20px;
+
+  &:not(:last-child) {
+    border-bottom: 1px dashed #bdbdbd;
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+  }
+
+  ul {
+    list-style: none;
+
+    &.top-level {
+      li {
+        a {
+          font-weight: 600;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    li {
+
+      a {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+
+    .sub {
+      padding-left: 20px;
+      margin-top: 8px;
+
+      li {
+        list-style: circle;
+
+        a {
+          font-weight: 400 !important;
+        }
+      }
+    }
+  }
+
+  &-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media screen and (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,60 @@
+.app_modal {
+  .ant-modal-content {
+    padding: 0;
+  }
+
+  .ant-modal-body {
+    padding: 16px;
+    max-height: calc(100vh - 240px);
+    overflow: auto;
+    overflow-x: hidden;
+  }
+
+  .ant-modal-header {
+    padding: 16px;
+    border-bottom: 0.5px solid rgba(189, 189, 189, 0.3215686275);
+    margin-bottom: 0;
+
+    .ant-modal-title {
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 500;
+    }
+  }
+
+  .ant-modal-footer {
+    border-top: 0.5px solid rgba(189, 189, 189, 0.3215686275);
+    padding: 16px;
+    margin-top: 0;
+
+    button {
+      min-width: 120px;
+    }
+  }
+}
+
+.isFullScreen {
+  height: -webkit-fill-available;
+  max-width: 100% !important;
+  width: 100vw !important;
+
+  .ant-modal-content {
+    height: 100% !important;
+    max-height: 100% !important;
+    overflow: hidden !important;
+    border-radius: 0;
+
+    .ant-modal-close {
+      top: 30px;
+      color: #fff;
+    }
+  }
+
+  .ant-modal-body {
+    max-height: 100% !important;
+    overflow: auto;
+    overflow-x: hidden;
+    height: calc(100vh - 186px);
+    padding: 0;
+  }
+}

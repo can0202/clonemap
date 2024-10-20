@@ -1,0 +1,142 @@
+.news {
+  .tab-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+      column-gap: 12px;
+      gap: 12px;
+    }
+
+    .item {
+      width: 100%;
+
+      &-0 {
+        grid-row: 1/7;
+        grid-column: 1/2;
+      }
+
+      &-1 {
+        grid-row: 1/7;
+        grid-column: 2/3;
+      }
+
+      &-bottom {
+
+        &:not(:last-child) {
+          min-height: 58px;
+        }
+
+        h2 {
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 500;
+        }
+
+        @media (max-width: 900px) {
+          min-height: auto;
+        }
+
+        &:not(:last-child) {
+          border-bottom: .5px solid #BDBDBD;
+          margin-bottom: 13px;
+          padding-bottom: 13px;
+
+          @media (max-width: 900px) {
+            margin-bottom: 0px;
+            padding-bottom: 12px;
+          }
+        }
+      }
+
+      &-top {
+        h2 {
+          margin-bottom: 4px;
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 500;
+        }
+
+        @media (max-width: 900px) {
+          grid-row: inherit !important;
+          grid-column: inherit !important;
+
+          a {
+            display: flex;
+            gap: 12px;
+
+            .img {
+              height: 120px;
+              width: 40%;
+              flex: none;
+            }
+
+            .info {
+              ul {
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .img {
+        height: 245px;
+        border-radius: 12px;
+
+        img {
+          height: 100%;
+          border-radius: 12px;
+          object-fit: cover;
+        }
+      }
+
+      h2 {
+        color: #181414;
+      }
+
+      p {
+        color: #6C6868;
+      }
+
+      .info {
+        ul {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          margin: 8px 0;
+
+          li {
+            color: #6C6868;
+            position: relative;
+
+            &:not(:last-child) {
+              padding-right: 16px;
+              margin-right: 16px;
+
+              &::before {
+                content: "";
+                position: absolute;
+                height: 5px;
+                width: 5px;
+                border-radius: 50%;
+                background-color: #6C6868;
+                top: 10px;
+                right: -2px;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .skeleton-news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}

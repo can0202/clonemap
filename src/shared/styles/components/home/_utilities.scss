@@ -1,0 +1,63 @@
+.utilities {
+  .container {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -3rem;
+      right: -2rem;
+      background-image: url('../../../../assets/img/element_utilities.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 40%;
+      width: 10%;
+    }
+  }
+
+  .item {
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 10px 40px 50px 0px rgba(246, 229, 229, 0.40);
+    padding: 16px;
+    height: 100%;
+    transition: .3s ease;
+
+    &:hover {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    h3 {
+      font-size: clamp(16px, 2vw, 24px);
+      line-height: clamp(20px, 2vw, 32px);
+      min-height: 58px;
+
+      @media (max-width: 1200px) {
+        min-height: 51px;
+      }
+
+      @media (max-width: 991px) {
+        min-height: auto;
+      }
+    }
+
+    p {
+      min-height: 40px;
+    }
+
+    button {
+      border-radius: 50%;
+      width: 44px;
+      min-width: auto;
+
+      &:hover {
+        background-color: $color-main;
+        border-color: $color-main;
+
+        path {
+          stroke: #FEFEFE;
+        }
+      }
+    }
+  }
+}

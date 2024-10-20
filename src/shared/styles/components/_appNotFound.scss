@@ -1,0 +1,11 @@
+.not_found {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  &.isFullheight {
+    height: calc(100vh - 300px);
+  }
+}

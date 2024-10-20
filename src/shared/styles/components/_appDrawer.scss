@@ -1,0 +1,16 @@
+.ant-drawer {
+  .ant-drawer-header-title {
+    position: relative;
+
+    .ant-drawer-close {
+      position: absolute;
+      right: 0;
+      margin: 0;
+    }
+  }
+
+  .ant-drawer-content-wrapper {
+    width: auto !important;
+    min-width: 570px;
+  }
+}

@@ -1,0 +1,48 @@
+.vars-banner {
+  .item {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-top: 25%;
+
+    a {
+      display: block;
+    }
+
+    img,
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .swiper {
+    &:hover {
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  .swiper-pagination {
+    bottom: 3rem !important;
+
+    @media (max-width: 767px) {
+      bottom: 1rem !important;
+    }
+  }
+
+}

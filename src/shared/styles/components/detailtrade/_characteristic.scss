@@ -1,0 +1,31 @@
+.characteristic {
+  .item {
+    .ant-col {
+      &:last-child {
+        p {
+          color: $color-black;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .interior_details {
+    h3 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    span {
+      border-radius: 8px;
+      background: rgba(24, 20, 20, 0.06);
+      min-width: 48px;
+      padding: 6px 12px;
+      display: inline-block;
+      font-weight: 400;
+      font-size: 14px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+  }
+}

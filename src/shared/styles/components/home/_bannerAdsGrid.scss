@@ -1,0 +1,84 @@
+.banner-ads-grid-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: 0.3s ease;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+
+    &-1 {
+      grid-row: 1 / 3;
+      grid-column: 4 / 1;
+
+      @media (max-width: 767px) {
+        grid-row: 1 / 1;
+        grid-column: 1 / 3;
+      }
+    }
+
+    &-2 {
+      grid-row: 1 / 2;
+      grid-column: 4 / 4;
+
+      @media (max-width: 767px) {
+        grid-row: inherit;
+        grid-column: inherit;
+        height: 185px;
+      }
+    }
+
+    &-3 {
+      grid-row: 2 / 3;
+      grid-column: 4 / 4;
+
+      @media (max-width: 767px) {
+        grid-row: inherit;
+        grid-column: inherit;
+        height: 185px;
+      }
+    }
+  }
+}
+
+
+.banner-ads {
+  .item {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-top: 25%;
+    border-radius: 6px;
+    cursor: pointer;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+  }
+}

@@ -1,0 +1,234 @@
+.modal-single {
+  width: 100% !important;
+  height: 100%;
+  border-radius: 0;
+  max-width: 100% !important;
+
+  .ant-modal-body {
+    padding: 0;
+  }
+
+  &-content {
+    .title-post {
+      position: absolute;
+      width: 30%;
+      top: 28px;
+      padding-left: 6rem;
+      z-index: 1;
+
+      @media (max-width: 1024px) {
+        padding-left: 2rem;
+      }
+
+      @media (max-width: 850px) {
+        display: none;
+      }
+
+      mark,
+      h3 {
+        font-size: 15px;
+        font-weight: 400;
+        color: $color-white;
+      }
+    }
+
+    .ant-tabs-nav {
+      background: rgba(0, 0, 0, 0.8196078431);
+      border-radius: 0;
+      border: none;
+      padding: 15px;
+      margin-bottom: 0;
+
+      &::before {
+        display: none;
+      }
+
+      &-wrap {
+        justify-content: center;
+
+        @media (max-width: 850px) {
+          justify-content: flex-start;
+        }
+      }
+
+      &-list {
+        background: rgb(74, 70, 75);
+        padding: 8px;
+        border-radius: 33px;
+      }
+
+      .ant-tabs-tab {
+        border-radius: 33px;
+        display: block;
+        padding: 9px 24px;
+        color: #9f9d9d;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+        transition: 0.3s ease;
+
+        @media (max-width: 767px) {
+          padding: 6px 10px;
+          font-size: 12px;
+          line-height: 15px;
+        }
+
+        &-active {
+          background: $color-white;
+
+          .ant-tabs-tab-btn {
+            color: $color-black !important;
+          }
+        }
+
+        &-btn {
+          color: #9f9d9d;
+
+          &:focus {
+            color: #9f9d9d;
+          }
+        }
+      }
+
+      .ant-tabs-ink-bar {
+        display: none;
+      }
+    }
+
+    .ant-tabs-content-holder {
+      height: calc(100vh - 85px);
+      width: 100%;
+    }
+  }
+
+  .ant-modal-content {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .ant-modal-close {
+      right: 6rem;
+      color: $color-white;
+      top: 28px;
+
+      path {
+        fill: #fff;
+      }
+
+      @media (max-width: 1024px) {
+        right: 2rem;
+        top: 25px;
+      }
+    }
+
+    .gallery-thumbs {
+      columns: 4;
+      grid-gap: 8px;
+      // overflow-y: auto;
+      flex-wrap: wrap;
+      padding: 0;
+      background-color: $color-white;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      @media (max-width: 850px) {
+        columns: 3;
+      }
+
+      @media (max-width: 767px) {
+        columns: 2;
+      }
+
+      .item {
+        break-inside: avoid;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+
+    .video {
+      div {
+        height: 100% !important;
+        width: 100% !important;
+      }
+    }
+
+    #map-popup,
+    .video iframe {
+      height: calc(100vh - 85px);
+      width: 100%;
+
+      @media (max-width: 767px) {
+        height: calc(100vh - 73px);
+      }
+    }
+  }
+}
+
+.ant-modal-centered {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.modal-loan {
+  .ant-modal {
+    @media (max-width: 767px) {
+      &-content {
+        padding: 12px;
+
+        .ant-table-cell {
+          padding: 4px;
+          font-size: 8px;
+          text-align: center;
+        }
+
+        .ant-pagination {
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .btn-download-excel {
+    float: left;
+    margin: 0;
+    position: relative;
+    top: -3rem;
+
+    @media (max-width: 767px) {
+      float: inherit;
+      top: auto;
+      margin: 0 auto;
+    }
+  }
+
+  .ant-pagination {
+    .ant-pagination-item-active {
+      border: none;
+
+      a {
+        color: $color-main;
+      }
+    }
+  }
+
+  table th,
+  table td {
+    @media (max-width: 767px) {
+      padding: 0.5rem !important;
+    }
+  }
+}
